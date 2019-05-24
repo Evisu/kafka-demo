@@ -1,0 +1,34 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: kafka-demo
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: test
+      enable-auto-commit: true
+      auto-commit-interval: 1000
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+ 
+management:
+  security:
+    eabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
