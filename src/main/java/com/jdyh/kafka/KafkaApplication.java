@@ -1,4 +1,4 @@
-package com.zy.kafka;
+package com.jdyh.kafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author walkman
  *
  */
-@SpringBootApplication(scanBasePackages = "com.zy.kafka")
+@SpringBootApplication(scanBasePackages = "com.jdyh.kafka")
 public class KafkaApplication {
 	
 	public static void main(String[] args) {
