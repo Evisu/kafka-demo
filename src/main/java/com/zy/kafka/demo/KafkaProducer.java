@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 生产者
- * 使用@EnableScheduling注解开启定时任务
  */
 @RestController
 @RequestMapping("/kafka")
